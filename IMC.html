@@ -13,7 +13,7 @@
 <body>
     <div class="container text-center">
         <div class="header">
-            <h1>IMC</h1>
+            <h1>Calculo de Peso IMC</h1>
         </div>
         <div class="row">
             <div class="col">
@@ -22,18 +22,33 @@
             </div>
             <div class="col">
               Altura
-              <input type="number" id="Altura" placeholder="Altura">
+              <input type="text" id="Altura" placeholder="Altura">
             </div>
             <div class="col">
               Peso
-              <input type="number" id="Peso" placeholder="Peso">
+              <input type="text" id="Peso" placeholder="Peso">
             </div>
-
-
+            <div class="col">
+                <input type="text" id="IMC" placeholder="Resultado">
+              </div>
+        </div>
+       
     </div>
+    <br>
+    <center><button type="button" class="btn btn-success" onclick="Calcular()">Calcular</button></center>
     <script>
         function Calcular(){
+            var IMC = Peso / (Altura * Altura);
+            
 
+            Altura = parseFloat(document.getElementById("Altura").value);
+            Peso = parseFloat(document.getElementById("Peso").value);
+            document.getElementById("IMC").value = IMC.toFixed(2);
+
+            if(imc < 20)
+    		{
+    			alert('Você esta abaixo do peso!');
+    		} 
         }
     </script>
 </body>
