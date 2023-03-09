@@ -21,35 +21,25 @@
               <input type="text" id="Nome" placeholder="Nome">
             </div>
             <div class="col">
-              Altura
-              <input type="text" id="Altura" placeholder="Altura">
+              
+              <input type="text" id="peso" placeholder="Peso">
             </div>
             <div class="col">
-              Peso
-              <input type="text" id="Peso" placeholder="Peso">
+              
+              <input type="text" id="altura" placeholder="Altura">
             </div>
             <div class="col">
-                <input type="text" id="IMC" placeholder="Resultado">
+                <input type="text"  id="resultado" readonly>
+        <button type="button" id="btn-calcular" onclick="calcular()">Resultado Aqui!</button>
               </div>
         </div>
        
     </div>
     <br>
-    <center><button type="button" class="btn btn-success" onclick="Calcular()">Calcular</button></center>
-    <script>
-        function Calcular(){
-            var IMC = Peso / (Altura * Altura);
-            
+    
+    <script src="script.js">
+      
 
-            Altura = parseFloat(document.getElementById("Altura").value);
-            Peso = parseFloat(document.getElementById("Peso").value);
-            document.getElementById("IMC").value = IMC.toFixed(2);
-
-            if(imc < 20)
-    		{
-    			alert('Você esta abaixo do peso!');
-    		} 
-        }
     </script>
 </body>
 </html>
