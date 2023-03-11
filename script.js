@@ -1,6 +1,6 @@
  function calcular(){
-  const peso = document.getElementById("peso").value;
-  const altura = document.getElementById("altura").value / 100;
+  const peso = document.getElementById("Peso").value;
+  const altura = document.getElementById("Altura").value / 100;
   const resultado = document.getElementById("resultado");
 
   if (altura !== "" && peso !== "") {

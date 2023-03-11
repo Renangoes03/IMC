@@ -1,6 +1,40 @@
-body{
+.header {
+    margin-top: 200px
+}
+
+.form-floating {
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid #DADCE0;
+    padding: 15px;
+    border-radius: 4px;
+    width: 25%; /* Tamanho do quadrado da div*/
+}
+
+body {
     background-color: ;
 }
-#resultado{
-    width: 300px;
+
+#resultado {
+    width: 250px;
+    margin: 25px;
+}
+
+#Nome {
+    width: 250px;
+    margin: 25px;
+}
+
+#Peso {
+    width: 250px;
+    margin: 25px;
+}
+
+#Altura {
+    width: 250px;
+    margin: 25px;
+}
+
+#btn-calcular {
+    margin: 25px;
 }
