@@ -21,7 +21,7 @@
     }
     resultado.value = `Seu IMC é ${imc}! ${mensagem}`;
   } else {
-    resultado.value = "Preencha todos os campos!!!";
+    resultado.value = "Preencha todos os campos!";
   }
 }
 
